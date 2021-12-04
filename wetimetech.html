@@ -1,0 +1,106 @@
+
+<!-- saved from url=(0030)http://web.wetimetech.com/sdk/ -->
+<html style="font-size: 22.933px;"><script id="allow-copy_script">(function agent() {
+    let unlock = false
+    document.addEventListener('allow_copy', (event) => {
+      unlock = event.detail.unlock
+    })
+
+    const copyEvents = [
+      'copy',
+      'cut',
+      'contextmenu',
+      'selectstart',
+      'mousedown',
+      'mouseup',
+      'mousemove',
+      'keydown',
+      'keypress',
+      'keyup',
+    ]
+    const rejectOtherHandlers = (e) => {
+      if (unlock) {
+        e.stopPropagation()
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+      }
+    }
+    copyEvents.forEach((evt) => {
+      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+        capture: true,
+      })
+    })
+  })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  
+ </head>
+ <body> 
+  <div data-v-672f820a="">
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">为保障</span><span data-v-672f820a="" class="s2">App</span><span data-v-672f820a="" class="s1">相关功能的实现与应用安全稳定的运行，我们可能会接入由第三方提供的软件开发包（</span><span data-v-672f820a="" class="s2">SDK</span><span data-v-672f820a="" class="s1">）实现相关目的。</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">我们会对合作方获取信息的软件工具开发包（</span><span data-v-672f820a="" class="s2">SDK</span><span data-v-672f820a="" class="s1">）进行严格的安全监测，以保护数据安全。</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">我们对接入的相关第三方</span><span data-v-672f820a="" class="s2">SDK</span><span data-v-672f820a="" class="s1">在目录中列明。</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">请注意，第三方</span><span data-v-672f820a="" class="s2">SDK</span><span data-v-672f820a="" class="s1">可能因为其版本升级、策略调整等原因导致数据处理类型存在一定变化，请以其公示的官方说明为准。</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">使用目的</span></p>
+   <p data-v-672f820a="" class="p2"><span data-v-672f820a="" class="s3">广点通</span><span data-v-672f820a="" class="s1">sdk</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">用于展示广告</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">数据类型：设备标识信息、地理位置信息</span></p>
+   <p data-v-672f820a="" class="p3"><span data-v-672f820a="" class="s4">官网链接：<a data-v-672f820a="" href="https://e.qq.com/ads/"><span data-v-672f820a="" class="s5">https://e.qq.com/ads/</span></a></span></p>
+   <p data-v-672f820a="" class="p4"><span data-v-672f820a="" class="s1"></span><br data-v-672f820a=""></p>
+   <p data-v-672f820a="" class="p2"><span data-v-672f820a="" class="s3">穿山甲</span><span data-v-672f820a="" class="s1">sdk</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">使用目的：用于展示广告</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">数据类型：设备标识信息、地理位置信息</span></p>
+   <p data-v-672f820a="" class="p3"><span data-v-672f820a="" class="s4">官网链接：<a data-v-672f820a="" href="https://www.pangle.cn/"><span data-v-672f820a="" class="s5">https://www.pangle.cn/</span></a></span></p>
+   <p data-v-672f820a="" class="p4"><span data-v-672f820a="" class="s1"><span data-v-672f820a="" class="Apple-converted-space"></span></span></p>
+   <p data-v-672f820a="" class="p2"><span data-v-672f820a="" class="s3">快手</span><span data-v-672f820a="" class="s1"> SDK<span data-v-672f820a="" class="Apple-converted-space"></span></span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">使用目的：用于展示广告</span><span data-v-672f820a="" class="s2"><span data-v-672f820a="" class="Apple-converted-space"></span></span><span data-v-672f820a="" class="s1">用于展示广告</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">数据类型：设备标识信息、地理位置信息</span></p>
+   <p data-v-672f820a="" class="p3"><span data-v-672f820a="" class="s4">官网链接：<a data-v-672f820a="" href="https://ad.e.kuaishou.com/welcome?redirectUrl=https%3A%2F%2Fad.e.kuaishou.com%2F"><span data-v-672f820a="" class="s5">https://ad.e.kuaishou.com/welcome?redirectUrl=https%3A%2F%2Fad.e.kuaishou.com%2F</span></a></span></p>
+   <p data-v-672f820a="" class="p4"><span data-v-672f820a="" class="s1"></span><br data-v-672f820a=""></p>
+
+   <p data-v-672f820a="" class="p2"><span data-v-672f820a="" class="s3">百度联盟</span><span data-v-672f820a="" class="s1"> SDK<span data-v-672f820a="" class="Apple-converted-space"></span></span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">使用目的：用于展示广告</span><span data-v-672f820a="" class="s2"><span data-v-672f820a="" class="Apple-converted-space"></span></span><span data-v-672f820a="" class="s1">用于展示广告</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">数据类型：设备标识信息、地理位置信息</span></p>
+   <p data-v-672f820a="" class="p3"><span data-v-672f820a="" class="s4">官网链接：<a data-v-672f820a="" href="https://union.baidu.com/bqt/#/"><span data-v-672f820a="" class="s5">https://ad.e.kuaishou.com/welcome?redirectUrl=https%3A%2F%2Fad.e.kuaishou.com%2F</span></a></span></p>
+   <p data-v-672f820a="" class="p4"><span data-v-672f820a="" class="s1"></span><br data-v-672f820a=""></p>
+
+   
+   <p data-v-672f820a="" class="p2"><span data-v-672f820a="" class="s3">芒果</span><span data-v-672f820a="" class="s1"> SDK<span data-v-672f820a="" class="Apple-converted-space"></span></span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">使用目的：用于展示广告</span><span data-v-672f820a="" class="s2"><span data-v-672f820a="" class="Apple-converted-space"></span></span><span data-v-672f820a="" class="s1">用于展示广告</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">数据类型：设备标识信息、地理位置信息</span></p>
+   <p data-v-672f820a="" class="p3"><span data-v-672f820a="" class="s4">官网链接：<a data-v-672f820a="" href="http://channel.mangolm.com/Home/Register?ch=1"><span data-v-672f820a="" class="s5">https://ad.e.kuaishou.com/welcome?redirectUrl=https%3A%2F%2Fad.e.kuaishou.com%2F</span></a></span></p>
+   <p data-v-672f820a="" class="p4"><span data-v-672f820a="" class="s1"></span><br data-v-672f820a=""></p>
+
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">移动安全联盟</span><span data-v-672f820a="" class="s2">sdk</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">用于保护用户移动信息安全</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">数据类型：设备标识信息</span></p>
+   <p data-v-672f820a="" class="p3"><span data-v-672f820a="" class="s4">官网链接：<a data-v-672f820a="" href="http://www.msa-alliance.cn/col.jsp?id=105"><span data-v-672f820a="" class="s5">http://www.msa-alliance.cn/col.jsp?id=105</span></a></span></p>
+   <p data-v-672f820a="" class="p4"><span data-v-672f820a="" class="s1"></span><br data-v-672f820a=""></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">微信开放平台</span><span data-v-672f820a="" class="s2"> SDK<span data-v-672f820a="" class="Apple-converted-space"></span></span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">使用目的</span><span data-v-672f820a="" class="s2"><span data-v-672f820a="" class="Apple-converted-space"></span></span><span data-v-672f820a="" class="s1">接入微信开放平台</span><span data-v-672f820a="" class="s2">SDK</span><span data-v-672f820a="" class="s1">，支持微信授权登录、微信分享和微信支付</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">数据类型：设备标识信息</span></p>
+   <p data-v-672f820a="" class="p3"><span data-v-672f820a="" class="s4">官网链接：<a data-v-672f820a="" href="https://open.weixin.qq.com/"><span data-v-672f820a="" class="s5">https://open.weixin.qq.com/</span></a></span></p>
+   <p data-v-672f820a="" class="p4"><span data-v-672f820a="" class="s1"></span><br data-v-672f820a=""></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">高德定位</span><span data-v-672f820a="" class="s2">sdk</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">使用目的：收集位置信息</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">数据类型：地理位置信息</span></p>
+   <p data-v-672f820a="" class="p3"><span data-v-672f820a="" class="s4">官网链接：<a data-v-672f820a="" href="https://lbsyun.baidu.com/"><span data-v-672f820a="" class="s5">https://lbsyun.baidu.com/</span></a></span></p>
+
+   <!-- <p data-v-672f820a="" class="p4"><span data-v-672f820a="" class="s1"></span><br data-v-672f820a=""></p>
+   <p data-v-672f820a="" class="p2"><span data-v-672f820a="" class="s3">同盾</span><span data-v-672f820a="" class="s1"> SDK<span data-v-672f820a="" class="Apple-converted-space"></span></span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">使用目的：接入同盾</span><span data-v-672f820a="" class="s2">SDK</span><span data-v-672f820a="" class="s1">，保护用户隐私</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">数据类型：设备标识信息</span></p>
+   <p data-v-672f820a="" class="p3"><span data-v-672f820a="" class="s4">官网链接：<a data-v-672f820a="" href="https://www.tongdun.cn/"><span data-v-672f820a="" class="s5">https://www.tongdun.cn/</span></a></span></p> -->
+   <p data-v-672f820a="" class="p4"><span data-v-672f820a="" class="s1"></span><br data-v-672f820a=""></p>
+   <p data-v-672f820a="" class="p2"><span data-v-672f820a="" class="s3">友盟</span><span data-v-672f820a="" class="s1"> SDK<span data-v-672f820a="" class="Apple-converted-space"></span></span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">使用目的：为APP提供统计分析服务</span><span data-v-672f820a="" class="s2">SDK</span><span data-v-672f820a="" class="s1">，保护用户隐私</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">数据类型：设备信息</span></p>
+   <p data-v-672f820a="" class="p3"><span data-v-672f820a="" class="s4">官网链接：<a data-v-672f820a="" href="https://www.umeng.com/"><span data-v-672f820a="" class="s5">https://www.umeng.com/</span></a></span></p>
+
+   <!-- <p data-v-672f820a="" class="p4"><span data-v-672f820a="" class="s1"></span><br data-v-672f820a=""></p>
+   <p data-v-672f820a="" class="p2"><span data-v-672f820a="" class="s3">豹趣</span><span data-v-672f820a="" class="s1"> SDK<span data-v-672f820a="" class="Apple-converted-space"></span></span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">使用目的：为用户提供多款好玩的小游戏</span><span data-v-672f820a="" class="s2">SDK</span><span data-v-672f820a="" class="s1">，保护用户隐私</span></p>
+   <p data-v-672f820a="" class="p1"><span data-v-672f820a="" class="s1">数据类型：设备信息</span></p>
+   <p data-v-672f820a="" class="p3"><span data-v-672f820a="" class="s4">官网链接：<a data-v-672f820a="" href="http://superman.cmcm.com/"><span data-v-672f820a="" class="s5">http://superman.cmcm.com/</span></a></span></p> -->
+
+
+  </div>
+</body></html>
